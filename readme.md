@@ -7,7 +7,7 @@ Simple Feedback library
 ## Installation
 
 
-	pod 'AAMFeedback', :podspec => 'https://raw.github.com/azu/AAMFeedback/master/AAMFeedback.podspec'
+	pod 'AAMFeedback_pawelkw', :podspec => 'https://raw.github.com/pawelkw/AAMFeedback/master/AAMFeedback.podspec'
 
 
 ## Usage
@@ -19,6 +19,7 @@ AAMFeedbackViewController *vc = [[AAMFeedbackViewController alloc] init];
 vc.toRecipients = @[@"YOUR_CONTACT@email.com"];
 vc.ccRecipients = nil;
 vc.bccRecipients = nil;
+vc.selectedTopicsIndex = 2; // 'Bug Report' will be selected by default.
 UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];
 [self presentModalViewController:nvc animated:YES];
 ```
